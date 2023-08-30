@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let leapYear = function (year) {
+      //   if ((year % 4 === 0 && year % 100 !== 0 && year % 400 !== 0) || (year % 100 === 0 && year % 400 === 0) ) {
+      //     return year + " la nam nhuan.";
+      //   } else {
+      //     return year + " la nam khong nhuan.";
+      //   }
+      //  };
+      // let input = prompt("Input year: ");
+      // leapYear(input);
+
+      function leapyear(year) {
+        if (year % 100 == 0) {
+          if (year % 400 == 0) {
+            console.log(`${year} la nam nhuan`);
+          } else {
+            console.log(`${year} ko la nam nhuan`);
+          }
+        } else {
+          if (year % 4 == 0) {
+            console.log(`${year} la nam nhuan`);
+          } else {
+            console.log(`${year} ko la nam nhuan`);
+          }
+        }
+      }
+      leapyear(2020);
+    </script>
+  </body>
+</html>

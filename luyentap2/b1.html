@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         let number1 = +prompt("moi nhap so nguyen 1");
+        let number2 = +prompt("moi nhap so nguyen 2");
+        let number3 = +prompt("moi nhap so nguyen 3");
+        function min(a,b,c) {
+            let num = [a,b,c];
+            let min = num[0];
+            for(let i=0;i<num.length;i++){
+                if(min>num[i]){
+                    min=num[i];
+                }
+            }
+            console.log(`so nguyen nho nhat la ${min}`)
+        }
+        min(number1,number2,number3);
+
+
+
+        // function minnum(a,b,c) {
+        //     let num = [a,b,c];
+        //     let min = num[0]
+        //     for(let i=0;i<num.length;i++){
+        //         if(min>num[i]){
+        //             min = num[i];
+        //         }
+        //     }
+        //     console.log(min)
+        // }
+    </script>
+</body>
+</html>

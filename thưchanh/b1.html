@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function proconfirm(answer) {
+            let result="";
+            if(answer){
+                result="Excellent";
+            }else{
+                result="maybe";
+            }
+            return result;
+        }
+        let xacnhan=confirm("sall");
+        let theAn=proconfirm(xacnhan);
+        alert(theAn);
+    </script>
+</body>
+</html>
